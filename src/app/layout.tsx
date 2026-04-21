@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, Geist_Mono, Playfair_Display } from "next/font/google";
+import { DM_Sans, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
 const dmSans = DM_Sans({ 
@@ -12,9 +12,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const playfair = Playfair_Display({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-jakarta",
   weight: ["400", "500", "600", "700", "800"],
 });
 
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`font-sans ${dmSans.variable} ${geistMono.variable} ${playfair.variable} antialiased`}
+        className={`font-sans ${dmSans.variable} ${geistMono.variable} ${jakarta.variable} antialiased`}
       >
         {children}
       </body>
