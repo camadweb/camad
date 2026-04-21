@@ -4,12 +4,6 @@ import { Heart, Users, HandHelping } from "lucide-react"
 import Navbar from "@/components/Navbar"
 import { getHome } from "@/sanity/lib/client"
 
-import { Plus_Jakarta_Sans } from "next/font/google"
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["600", "700", "800"],
-})
-
 export const revalidate = 60
 
 export default async function Home({ welsh }: { welsh?: boolean }) {
@@ -49,8 +43,8 @@ export default async function Home({ welsh }: { welsh?: boolean }) {
 
             {/* Heading */}
             <h1
-              className={`${jakarta.className} max-w-3xl font-bold leading-tight 
-                tracking-tight text-card sm:text-4xl md:text-5xl lg:text-6xl text-4xl`}
+              className="font-serif max-w-3xl font-bold leading-tight 
+                tracking-tight text-card sm:text-4xl md:text-5xl lg:text-6xl text-4xl"
             >
               {home?.header1}
             </h1>
