@@ -144,16 +144,16 @@ export default async function Services({ welsh } : {welsh?: boolean}) {
         </div>
       </section>
 
-      <section id="community" className="flex flex-col gap-8 bg-accent/95 justify-center items-center w-full sm:pb-20 pb-18 pt-18 lg:px-18">
+      <section id="community" className="flex flex-col gap-8 bg-accent/95 justify-center items-center w-full sm:pb-20 pb-18 pt-18 lg:px-18 px-3">
         <Reveal className="flex flex-col gap-8 justify-center items-center w-full">
           <Label text={service?.label4} icon={Icons.UtensilsCrossed} />
           <h1 className="text-foreground text-center text-4xl max-w-2xl font-bold font-serif tracking-tight">{service?.header4}</h1>
-          <p className="max-w-3xl text-center text-foreground/75 text-md md:px-0 px-5">
+          <p className="max-w-3xl text-center text-foreground/75 text-md">
             {service?.subheader4}
           </p>
         </Reveal>
 
-        <div className="grid gap-3 lg:grid-cols-2 max-w-[1285px] px-3 xl:px-0">
+        <div className="grid gap-3 lg:grid-cols-2 max-w-[1285px]">
           <Reveal className="flex h-full" delay={0.1}>
             <div className="rounded-2xl border border-border bg-card p-8 transition-shadow hover:shadow-md">
               <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">

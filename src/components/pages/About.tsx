@@ -20,7 +20,7 @@ export default async function About({ welsh }: { welsh?: boolean }) {
     <>
       <Navbar background={true} welsh={welsh} />
 
-      <header className="flex flex-col gap-8 bg-[#eff0ec] justify-center items-center w-full pb-18 pt-12">
+      <header className="flex flex-col gap-8 bg-[#eff0ec] justify-center items-center w-full pb-18 pt-12 px-1">
         <Label text={about?.label1} icon={Icons.Heart} />
         <h1 className="text-foreground text-6xl font-bold font-serif tracking-tight text-center">{about?.header1}</h1>
         <p className="max-w-xl text-center text-foreground/75 text-lg md:px-0 px-5">
@@ -50,16 +50,16 @@ export default async function About({ welsh }: { welsh?: boolean }) {
         </div>
       </section>
 
-      <section className="flex flex-col gap-8 bg-[#e6ece8] justify-center items-center w-full sm:pb-20 pb-13 pt-18">
+      <section className="flex flex-col gap-8 bg-[#e6ece8] justify-center items-center w-full sm:pb-20 pb-13 pt-18 px-3">
         <Reveal className="flex flex-col gap-8 items-center justify-center w-full">
           <Label text={about?.label2} icon={Icons.RefreshCw} />
           <h1 className="text-foreground text-center text-4xl max-w-lg font-bold font-serif tracking-tight">{about?.header3}</h1>
-          <p className="max-w-3xl text-center text-foreground/75 text-md md:px-0 px-3">
+          <p className="max-w-3xl text-center text-foreground/75 text-md">
             {about?.subheader4}
           </p>
         </Reveal>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 sm:gap-6 gap-3 sm:px-17 px-3 pt-8 sm:pb-0 pb-5 max-w-7xl items-stretch">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 sm:gap-6 gap-3 sm:px-17 pt-8 sm:pb-0 pb-5 max-w-7xl items-stretch">
 
           {about?.cards1.map((card: any, index: number) => (
             <Reveal key={index} delay={index * 0.1}>
@@ -97,15 +97,15 @@ export default async function About({ welsh }: { welsh?: boolean }) {
         </Reveal>
       </section>
 
-      <section className="flex flex-col gap-8 bg-[#eff0ec] justify-center items-center w-full py-18">
+      <section className="flex flex-col gap-8 bg-[#eff0ec] justify-center items-center w-full py-18 px-3">
         <Reveal className="flex flex-col gap-8 items-center justify-center w-full">
           <h1 className="text-foreground text-center text-4xl max-w-2xl font-bold font-serif tracking-tight">{about?.header5}</h1>
-          <p className="max-w-3xl text-center text-foreground/75 text-md md:px-0 px-5">
+          <p className="max-w-3xl text-center text-foreground/75 text-md">
             {about?.subheader7}
           </p>
         </Reveal>
 
-        <div className="grid h-full md:grid-cols-2 lg:grid-cols-4 sm:gap-6 gap-3 sm:px-17 px-3 pt-8 max-w-7xl items-stretch">
+        <div className="grid h-full md:grid-cols-2 lg:grid-cols-4 sm:gap-6 gap-3 sm:px-17 pt-8 max-w-7xl items-stretch">
           {about?.cards2.map((card: any, index: number) => (
             <Reveal key={index} delay={index * 0.1}>
               <SmallerCard

@@ -170,7 +170,7 @@ export default async function Contact({ welsh }: { welsh?: boolean }) {
         </section>
       }
 
-      <section className={`flex flex-col gap-8 justify-center items-center w-full sm:pb-20 pb-13 pt-18 ${contact.team ? "bg-[#e6ece8]" : "bg-accent/95"}`}>
+      <section className={`flex flex-col gap-8 justify-center items-center w-full sm:pb-20 pb-13 pt-18 px-3 ${contact.team ? "bg-[#e6ece8]" : "bg-accent/95"}`}>
         <Reveal className="flex flex-col gap-8 items-center justify-center w-full">
           <Label text={contact?.label3} icon={Heart} className={"text-orange-700"} />
           <h1 className="text-foreground text-center text-4xl max-w-xl font-bold font-serif tracking-tight">{contact?.header4}</h1>
@@ -179,7 +179,7 @@ export default async function Contact({ welsh }: { welsh?: boolean }) {
           </p>
         </Reveal>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 sm:gap-6 gap-3 lg:px-30 md:px-18 px-3 pt-2 sm:pb-0 pb-5 max-w-6xl items-stretch">
+        <div className="grid grid-cols-2 lg:grid-cols-3 sm:gap-6 gap-3 lg:px-30 md:px-18 px-0 pt-2 sm:pb-0 pb-5 max-w-6xl items-stretch">
           {contact?.sponsors.map((sponsor: any, index: number) => (
             <Reveal key={sponsor._key} delay={index * 0.1}>
               <div className="group h-full bg-card/90 rounded-2xl border-1 border-primary/20 transition-shadow hover:shadow-md">

@@ -50,12 +50,14 @@ export default async function Home({ welsh }: { welsh?: boolean }) {
             </h1>
 
             {/* Subheading */}
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-card/90 md:text-2xl">
-              {home?.subheader1}
-            </p>
+            { home?.subheader1 && (
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-card/90 md:text-2xl">
+                {home?.subheader1}
+              </p>
+            )}
 
             {/* CTA buttons */}
-            <div className="mt-16 flex items-center sm:justify-start justify-center gap-4 text-center">
+            <div className="my-10 flex items-center sm:justify-start justify-center gap-4 text-center">
               <Link
                 href={welsh ? "/cy/services" : "/services"}
                 className="rounded-full sm:w-fit w-full bg-primary sm:px-8 px-5 py-5 text-base font-semibold text-primary-foreground 
@@ -73,7 +75,7 @@ export default async function Home({ welsh }: { welsh?: boolean }) {
             </div>
 
             {/* Stats row */}
-            <div className="mt-16 grid sm:max-w-2xl grid-cols-1 sm:grid-cols-2 gap-6 md:grid-cols-3">
+            <div className="grid sm:max-w-2xl grid-cols-1 sm:grid-cols-2 gap-6 md:grid-cols-3">
               <StatCard
                 icon={<Users className="h-5 w-5" />}
                 value={home?.card1H}
