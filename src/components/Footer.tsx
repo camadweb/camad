@@ -76,18 +76,18 @@ export function Footer({ welsh }: { welsh?: boolean }) {
           <div className="flex sm:flex-row flex-col sm:gap-0 gap-4 w-full sm:justify-between text-card/40 text-sm pt-8 pb-12">
             <p>{new Date().getFullYear()} {welsh ? "CAMAD. Pob hawl wedi’i harchebu." : "CAMAD. All rights reserved."}</p>
             {welsh ? (
-              <>
+              <a href="https://www.dafbeh.xyz" target="_blank" rel="noopener noreferrer" className="hover:underline">
                 <p className="flex gap-2 items-center">
                   Wedi greu gyda <Heart size={15} className="text-red-500" />yn Machynlleth
                 </p>
-              </>
+              </a>
             ) :
               (
-                <>
+                <a href="https://www.dafbeh.xyz" target="_blank" rel="noopener noreferrer" className="hover:underline">
                   <p className="flex gap-2 items-center">
                     Made with <Heart size={15} className="text-red-500" />in Machynlleth
                   </p>
-                </>
+                </a>
               )}
           </div>
         </div>
