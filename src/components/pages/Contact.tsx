@@ -41,7 +41,7 @@ export default async function Contact({ welsh }: { welsh?: boolean }) {
                 <MapPin className="h-5 w-5" />
               </div>
               <div className="flex-col gap-0">
-                <h3 className="font-semibold text-foreground">Our Office</h3>
+                <h3 className="font-semibold text-foreground">{welsh ? "Gydaethion" : "Our Office"}</h3>
                 {contact.ourOffice.map((line: string) => (
                   <p key={line} className="text-sm leading-relaxed text-foreground/65">
                     {line}
@@ -56,7 +56,7 @@ export default async function Contact({ welsh }: { welsh?: boolean }) {
                 <Phone className="h-5 w-5" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground">Phone</h3>
+                <h3 className="font-semibold text-foreground">{welsh ? "Ffôn" : "Phone"}</h3>
                 <p className="mt-1 text-sm text-foreground/65">
                   {contact?.phone}
                 </p>
@@ -69,7 +69,7 @@ export default async function Contact({ welsh }: { welsh?: boolean }) {
                 <Mail className="h-5 w-5" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground">Email</h3>
+                <h3 className="font-semibold text-foreground">{welsh ? "Ebost" : "Email"}</h3>
                 <div className="mt-1 flex flex-col gap-1">
                   {contact?.emails?.map((email: { email: string; description: string }, index: number) => (
                     <a key={index}
@@ -91,7 +91,7 @@ export default async function Contact({ welsh }: { welsh?: boolean }) {
                 <Clock className="h-5 w-5" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground">Opening Hours</h3>
+                <h3 className="font-semibold text-foreground">{welsh ? "Agor" : "Opening Hours"}</h3>
                 <div className="mt-1 text-sm text-foreground/65">
                   {contact?.openinghours.map((line: string) => (
                     <p key={line} className="mt-px">

@@ -34,10 +34,10 @@ export default async function Services({ welsh } : {welsh?: boolean}) {
         <div className="mx-auto max-w-6xl md:px-10 px-0">
           <nav className="scrollbar-hide flex gap-1 overflow-x-auto py-3">
             {[
-              { label: "Transport", href: "#transport" },
-              { label: "Health & Wellbeing", href: "#health" },
-              { label: "Community Support", href: "#community" },
-              { label: "Local Support", href: "#localsupport" }
+              { label: `${welsh ? 'Trafnidiaeth' : 'Transport'}`, href: "#transport" },
+              { label: `${welsh ? 'Iechyd a Phreth' : 'Health & Wellbeing'}`, href: "#health" },
+              { label: `${welsh ? 'Cynghrair Cymunedol' : 'Community Support'}`, href: "#community" },
+              { label: `${welsh ? 'Cynghrair Lleol' : 'Local Support'}`, href: "#localsupport" }
             ].map((item) => (
               <a
                 key={item.label}

@@ -29,10 +29,10 @@ export function Footer({ welsh }: { welsh?: boolean }) {
               <h3 className="text-sm font-semibold text-card/40 tracking-wider">{welsh ? "DOLENNI CYNNYDD" : "QUICK LINKS"}</h3>
               <ul className="flex flex-col gap-3">
                 {[
-                  { label: welsh ? "Amdanom" : "About", href: "/about" },
-                  { label: welsh ? "Gwasanaethau" : "Services", href: "/services" },
-                  { label: welsh ? "Newyddion" : "News", href: "/news" },
-                  { label: welsh ? "Cyswllt" : "Contact", href: "/contact" },
+                  { label: welsh ? "Amdanom" : "About", href: `${welsh ? "/cy/about" : "/about"}` },
+                  { label: welsh ? "Gwasanaethau" : "Services", href: `${welsh ? "/cy/services" : "/services"}` },
+                  { label: welsh ? "Newyddion" : "News", href: `${welsh ? "/cy/news" : "/news"}` },
+                  { label: welsh ? "Cyswllt" : "Contact", href: `${welsh ? "/cy/contact" : "/contact"}` },
                 ].map((link) => (
                   <li key={link.label}>
                     <Link
