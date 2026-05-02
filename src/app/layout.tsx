@@ -20,7 +20,7 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: "CAMAD » Volunteer Today!",
-  description: "CAMAD is a volunteer-run organization dedicated to preserving and sharing the rich history of Machynlleth, Wales. Join us in our mission to document and celebrate the town's heritage through various projects and initiatives.",
+  description: "Help preserve the story of Machynlleth. Join CAMAD as a volunteer and take part in projects that protect and share our town’s heritage.",
 };
 
 export default function RootLayout({
