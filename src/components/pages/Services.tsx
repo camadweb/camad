@@ -248,13 +248,14 @@ export default async function Services({ welsh } : {welsh?: boolean}) {
               image: string, name: string, about: string, isLink?: boolean, details?:
               { icon: string, text: string, isLink?: boolean }[]
             }, index: number) => (
-              <Reveal key={index} delay={index * 0.1}>
+              <Reveal key={index} className="flex h-full" delay={index * 0.1}>
                 <SupportCard
                   image={urlFor(card.image).width(600).url()}
                   title={card.name}
                   description={card.about}
                   details={card.details}
                   isLink={card.isLink}
+                  className="h-full w-full"
                 />
               </Reveal>
             ))}
