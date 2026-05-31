@@ -35,9 +35,9 @@ export default async function Services({ welsh } : {welsh?: boolean}) {
           <nav className="scrollbar-hide flex gap-1 overflow-x-auto py-3">
             {[
               { label: `${welsh ? 'Trafnidiaeth' : 'Transport'}`, href: "#transport" },
-              { label: `${welsh ? 'Iechyd a Phreth' : 'Health & Wellbeing'}`, href: "#health" },
-              { label: `${welsh ? 'Cynghrair Cymunedol' : 'Community Support'}`, href: "#community" },
-              { label: `${welsh ? 'Cynghrair Lleol' : 'Local Support'}`, href: "#localsupport" }
+              { label: `${welsh ? 'Iechyd a Lles' : 'Health & Wellbeing'}`, href: "#health" },
+              { label: `${welsh ? 'Cyngor' : 'Community Support'}`, href: "#community" },
+              { label: `${welsh ? 'Cyngor Lleol' : 'Local Support'}`, href: "#localsupport" }
             ].map((item) => (
               <a
                 key={item.label}
@@ -181,7 +181,7 @@ export default async function Services({ welsh } : {welsh?: boolean}) {
 
               <div className="mt-6 rounded-xl bg-muted p-4">
                 <p className="text-xs font-medium uppercase tracking-wider text-foreground/65">
-                  Eligibility includes:
+                  {welsh ? 'CYNNHWYS:' : 'ELIGIBILITY INCLUDES:'}
                 </p>
                 <ul className="mt-2 grid gap-1 text-sm text-foreground/65">
                   {service?.eligibility?.map((item: string, index: number) => (

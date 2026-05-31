@@ -74,7 +74,7 @@ export function Footer({ welsh }: { welsh?: boolean }) {
           <hr className="w-full h-[1px] mx-auto border-background/10" />
 
           <div className="flex sm:flex-row flex-col sm:gap-0 gap-4 w-full sm:justify-between text-card/40 text-sm pt-8 pb-12">
-            <p>{new Date().getFullYear()} {welsh ? "CAMAD. Pob hawl wedi’i harchebu." : "CAMAD. All rights reserved."}</p>
+            <p>{new Date().getFullYear()} {welsh ? "CAMAD. Cedwir pob hawl." : "CAMAD. All rights reserved."}</p>
             {welsh ? (
               <a href="https://www.dafbeh.xyz" target="_blank" rel="noopener noreferrer" className="hover:underline">
                 <p className="flex gap-2 items-center">
